@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -ex
+
 ###############################################################################
 # setup.sh
 # DirectAdmin  setup.sh  file  is  the  first  file  to  download  when doing a
