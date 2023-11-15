@@ -940,6 +940,7 @@ if [ $CMD_LINE -eq 0 ]; then
 
 	if [ -e $BUILD ]; then
 		$BUILD create_options
+		sed -i 's/.*downloadserver.*/downloadserver=pub-fc99108c5f144f369b91b856e0f999f4.r2.dev/' $SERVER/custombuild/${CB_VER}/custombuild/options.conf
 	else
 		echo "unable to download the build file.  Using defaults instead.";
 	fi
