@@ -1739,12 +1739,13 @@ if [ ! -e $DA_PATH/update.tar.gz ]; then
 	exit 3;
 fi
 
-COUNT=`head -n 4 $DA_PATH/update.tar.gz | grep -c "* You are not allowed to run this program *"`;
-if [ $COUNT -ne 0 ]; then
-	echo "";
-	echo "You are not authorized to download the update package with that client id and license id for this IP address. Please email sales@directadmin.com";
-	exit 4;
-fi
+# COUNT=`head -n 4 $DA_PATH/update.tar.gz | grep -c "* You are not allowed to run this program *"`;
+# echo $COUNT
+# if [ $COUNT -ne 0 ]; then
+# 	echo "";
+# 	echo "You are not authorized to download the update package with that client id and license id for this IP address. Please email sales@directadmin.com";
+# 	exit 4;
+# fi
 
 cd $DA_PATH;
 tar xzf update.tar.gz
