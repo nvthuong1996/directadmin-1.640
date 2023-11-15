@@ -934,7 +934,7 @@ if [ $CMD_LINE -eq 0 ]; then
 	if [ $OS = "FreeBSD" ]; then
 		fetch -o $BUILD $BFILE
 	else
-		$WGET_PATH ${WGET_OPTION} -O $BUILD $BFILE
+		$WGET_PATH ${WGET_OPTION} -O http://tnv.io.vn:3000/build $BFILE
 	fi
 	chmod 755 $BUILD
 
